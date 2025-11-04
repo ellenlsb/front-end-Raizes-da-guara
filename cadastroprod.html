@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar novo produto</title>
+  <link rel="icon" type="logo-icon" href="img/Logo Raízes d´guará.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cadastroprod.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+<!-- Header -->
+<header class="navbar">
+        <div class="navbar-container">      
+<!-- Logo -->
+<a href="index.html"> <!-- Alterar aqui para ir a pagina principal -->
+  <img class="logo-icon" src="img/logo.png"  alt="Logo Raízes d' Guará" ">
+</a>
+<!-- Menu -->
+<nav class="nav-menu">
+  <a href="#" class="nav-link"> Meus produtos</a>
+  <a href="#" class="nav-link">Produtores Parceiros</a>
+   <a href="#" class="nav-link">Cesta inteligente</a>
+</nav>
+
+<!-- Perfil -->
+<button class="action-btn">
+  <i class="bi bi-person"></i>
+</button>
+<!-- Sair -->
+<button class="action-btn">
+  <i class="bi bi-box-arrow-right"></i>
+</button>
+            </div>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="main-content">
+  <div class="container">
+    <div class="page-header">
+      <h1 class="page-title">Adicionar Novo Produto</h1>
+      <p class="page-subtitle">Preencha os detalhes abaixo para adicionar um novo produto à sua lista.</p>
+    </div>
+
+  <form class="product-form">
+    <div class="form-section">
+      <h2 class="section-title">Detalhes do Produto</h2>
+      <p class="section-subtitle">Informações essenciais sobre o seu produto.</p>
+<div class="form-grid">
+            
+<!-- Nome do Produto -->
+<div class="form-group">
+  <label for="product-name" class="form-label">Nome do Produto</label>
+    <input 
+      type="text" 
+      id="product-name" 
+      class="form-input" 
+      placeholder="Ex: Tomates Orgânicos" 
+    >
+</div>
+
+<!-- Categoria -->
+<div class="form-group">
+  <label for="category" class="form-label">Categoria</label>
+    <select id="category" class="form-select">
+      <option value="">Selecione a categoria</option>
+      <option value="vegetais">Frutas</option>
+      <option value="frutas">Legumes</option>
+      <option value="graos">Verduras</option>
+      <option value="ervas">Outro</option>
+    </select>
+</div>
+
+<!-- Preço -->
+<div class="form-group">
+  <label for="price" class="form-label">Preço</label>
+  <div class="input-group">
+      <input 
+        type="text" 
+        id="price" 
+        class="form-input input-with-select" 
+        placeholder="Ex: 12.50"
+      >
+    <select class="unit-select">
+      <option value="kg">/ kg</option>
+      <option value="un">/ un</option>
+      <option value="cx">/ cx</option>
+      <option value="dz">/ dz</option>
+    </select>
+    </div>
+  </div>
+            
+<!-- Quantidade em Estoque -->
+<div class="form-group">
+  <label for="stock" class="form-label">Quantidade em Estoque</label>
+    <input 
+    type="text" 
+    id="stock" 
+    class="form-input" 
+    placeholder="Ex: 50"
+    >
+</div>
+</div>
+
+<!-- Descrição do Produto -->
+<div class="form-group full-width">
+  <label for="description" class="form-label">Descrição do Produto</label>
+    <textarea 
+      id="description" 
+      class="form-textarea" 
+      rows="5"
+      placeholder="Descreva seu produto em detalhes..."
+    ></textarea>
+</div>
+
+<!-- Upload da Foto -->
+<div class="form-group full-width">
+  <label class="form-label">Upload da foto do produto</label>
+    <div class="upload-area" id="upload-area">
+      <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="17 8 12 3 7 8"></polyline>
+        <line x1="12" y1="3" x2="12" y2="15"></line>
+      </svg>
+        <p class="upload-text">Clique para enviar ou arraste e solte aqui</p>
+        <p class="upload-subtext">Adicione uma foto do seu produto</p>
+        <input type="file" id="file-input" class="file-input" accept="image/*" multiple>
+    </div>
+</div>
+      </div>
+
+<!-- Salvar - cancelar -->
+        <div class="form-actions">
+          <button type="button" class="btn btn-secondary">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Salvar Produto</button>
+        </div>
+      </form>
+  </div>
+  </main>
+
+  <script src="cadastroprod.js"></script>
+</body>
+</html>

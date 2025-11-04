@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="logo-icon" href="img/Logo Raízes d´guará.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="navbar">
+        <div class="navbar-container">      
+<!-- Logo -->
+<a href="index.html">
+  <img class="logo-icon" src="img/logo.png"  alt="Logo Raízes d' Guará" ">
+</a>
+<!-- Menu -->
+<nav class="nav-menu">
+  <a href="fornecedor.html" class="nav-link">Produtores Parceiros</a>
+   <a href="#" class="nav-link">Cesta inteligente</a>
+</nav>
+
+<!-- Perfil -->
+<button class="action-btn">
+  <i class="bi bi-person"></i>
+</button>
+<!-- Sair -->
+<button class="action-btn">
+  <i class="bi bi-box-arrow-right"></i>
+</button>
+            </div>
+    </div>
+</header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="content-wrapper">
+      <h1 class="main-title">Bem-vindo(a)</h1>
+
+      <div class="login-card">
+        <h2 class="card-title">Acesse sua Conta</h2>
+        <p class="card-subtitle">Entre para explorar o mercado ou gerenciar seus produtos.</p>
+
+        <form class="login-form">
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail ou Usuário</label>
+            <input 
+              type="email" 
+              id="email" 
+              class="form-input" 
+              placeholder="seuemail@exemplo.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Senha</label>
+            <input 
+              type="password" 
+              id="password" 
+              class="form-input" 
+              placeholder="••••••••"
+            />
+          </div>
+
+          <div class="forgot-password">
+            <a href="#" class="forgot-link">Esqueci a senha</a>
+          </div> 
+
+          <div class="forgot-password">
+            <a href="cadastrouser.html" class="forgot-link">Não tem conta? Cadastre-se</a>
+          </div> 
+
+<div class="button-group">
+  <button type="button" class="btn btn-outline" onclick="window.location.href='consumidor.html'">
+    Login Consumidor
+  </button>
+  <button type="button" class="btn btn-primary" onclick="window.location.href='fornecedor.html'">
+    Login Fornecedor
+  </button>
+</div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

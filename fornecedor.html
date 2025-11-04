@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Fornecedor</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="logo-icon" href="img/Logo Raízes d´guará.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="fornecedor.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="navbar">
+        <div class="navbar-container">      
+<!-- Logo -->
+<a href="index.html">
+  <img class="logo-icon" src="img/logo.png"  alt="Logo Raízes d' Guará" ">
+</a>
+<!-- Menu -->
+<nav class="nav-menu">
+  <a href="#" class="nav-link"> Meus produtos</a>
+  <a href="produtores.html" class="nav-link">Produtores Parceiros</a>
+   <a href="#" class="nav-link">Cesta inteligente</a>
+</nav>
+
+<!-- Perfil -->
+<button class="action-btn">
+  <i class="bi bi-person"></i>
+</button>
+<!-- Sair -->
+<button class="action-btn">
+  <i class="bi bi-box-arrow-right"></i>
+</button>
+            </div>
+    </div>
+</header>
+
+<!-- Produtos -->
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">Meus Produtos</h2>
+            <button  id="btnAddProduct" class="btn-primary">
+                    <i class="bi bi-pencil-square"></i>
+                    Adicionar Novo Produto
+            </button>
+    </div>
+<!-- Produto 1 -->
+        <div class="products-list">
+            <div class="product-card">
+                <div class="product-info">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.aeh0iyq-dooGl0qqiAxWewHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Tomates Orgânicos" class="product-image">
+                        <div>
+                            <h3 class="product-name">Tomates Orgânicos</h3>
+                            <p class="product-category">Hortaliças</p>
+                        </div>
+                </div>
+
+        <div class="product-actions">
+            <div class="product-price">
+                <p class="price">R$ 12,50 / kg</p>
+                <p class="stock">50 kg em estoque</p>
+            </div>
+        <div class="action-buttons">
+                <button class="btn-icon btn-outline">
+                   <i class="bi bi-pencil-square"></i>
+                </button>
+
+                <button class="btn-icon btn-destructive">
+                    <i class="bi bi-trash"></i>
+                </button>
+        </div>
+        </div>
+    </div>
+
+<!-- Produto 2 -->
+    <div class="product-card">
+        <div class="product-info">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.EtRwgWMyYsnxkujhqksfWwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Alface Crespa" class="product-image">
+                <div>
+                    <h3 class="product-name">Alface Crespa</h3>
+                    <p class="product-category">Hortaliças</p>
+                </div>
+        </div>
+        <div class="product-actions">
+            <div class="product-price">
+                <p class="price">R$ 4,00 / unidade</p>
+                <p class="stock">100 unidades em estoque</p>
+            </div>
+        <div class="action-buttons">
+            <button class="btn-icon btn-outline">
+            <i class="bi bi-pencil-square"></i>
+            </button>
+            <button class="btn-icon btn-destructive">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+    </div>
+
+<!-- Produto 3 -->
+<div class="product-card">
+    <div class="product-info">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.gpm9VxRPDp-AxSzgY6V16AHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Morangos Frescos" class="product-image">
+            <div>
+                <h3 class="product-name">Morangos Frescos</h3>
+                <p class="product-category">Frutas</p>
+            </div>
+    </div>
+    <div class="product-actions">
+        <div class="product-price">
+            <p class="price">R$ 6,90 / caixa</p>
+            <p class="stock">30 caixas em estoque</p>
+        </div>
+        <div class="action-buttons">
+            <button class="btn-icon btn-outline">
+                <i class="bi bi-pencil-square"></i>
+            </button>
+            <button class="btn-icon btn-destructive">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Produto  -->
+<div class="product-card">
+    <div class="product-info">
+        <img src="https://th.bing.com/th/id/R.f3076ff791b86edfd75a63fdcf0d98c6?rik=15XGSUeOrZOvpg&pid=ImgRaw&r=0" alt="Cenouras" class="product-image">
+            <div>
+                <h3 class="product-name">Cenouras</h3>
+                <p class="product-category">Legumes</p>
+            </div>
+    </div>
+    <div class="product-actions">
+        <div class="product-price">
+            <p class="price">R$ 6,00 / kg</p>
+            <p class="stock">80 kg em estoque</p>
+        </div>
+        <div class="action-buttons">
+            <button class="btn-icon btn-outline">
+                    <i class="bi bi-pencil-square"></i>
+                </button>
+            <button class="btn-icon btn-destructive">
+                <i class="bi bi-trash"></i>
+            </button>
+        </div>
+    </div>
+</div>
+        </div>
+    </section>
+
+ <!-- Recent Orders Section -->
+<section class="section">
+    <div class="section-header-vertical">
+        <h2 class="section-title">Pedidos Recentes</h2>
+        <p class="section-subtitle">Visualize o status e os detalhes dos seus pedidos.</p>
+    </div>
+        <div class="card">
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID do Pedido</th>
+                            <th>Cliente</th>
+                            <th>Data</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="font-medium">PED7890</td>
+                            <td>Ana Clara Silva</td>
+                            <td>2024-07-20</td>
+                            <td class="font-medium">R$ 65,00</td>
+                            <td><span class="badge badge-success">Concluído</span></td>
+
+                        </tr>
+                        <tr>
+                            <td class="font-medium">PED7891</td>
+                            <td>João Pedro Santos</td>
+                            <td>2024-07-21</td>
+                            <td class="font-medium">R$ 120,50</td>
+                            <td><span class="badge badge-warning">Em Processamento</span></td>
+
+                        </tr>
+                        <tr>
+                            <td class="font-medium">PED7892</td>
+                            <td>Maria Eduarda Lima</td>
+                            <td>2024-07-21</td>
+                            <td class="font-medium">R$ 38,00</td>
+                            <td><span class="badge badge-muted">Pendente</span></td>
+
+                        </tr>
+                        <tr>
+                                    <td class="font-medium">PED7893</td>
+                                    <td>Carlos Alberto Costa</td>
+                                    <td>2024-07-22</td>
+                                    <td class="font-medium">R$ 95,00</td>
+                                    <td><span class="badge badge-warning">Em Processamento</span></td>
+
+                        </tr>
+                        <tr>
+                            <td class="font-medium">PED7894</td>
+                                <td>Beatriz Oliveira Souza</td>
+                                <td>2024-07-22</td>
+                                <td class="font-medium">R$ 55,00</td>
+                                <td><span class="badge badge-muted">Pendente</span></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- Sales Reports Section -->
+<section class="section">
+    <h2 class="section-title">Relatórios de Vendas</h2>
+    <div class="charts-grid">
+        <div class="card">
+            <div class="card-content">
+                <h3 class="chart-title">Vendas Semanais</h3>
+                <canvas id="weeklyChart"></canvas>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3 class="chart-title">Produtos Mais Populares</h3>
+                <canvas id="popularChart"></canvas>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- forms -->
+<section class="section">
+    <div class="section-header-vertical">
+        <h2 class="section-title">Informações da Minha Horta/Fazenda</h2>
+        <p class="section-subtitle">Mantenha as informações da sua propriedade atualizadas para atrair mais consumidores.</p>
+    </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Nome da Horta/Fazenda</label>
+                        <input type="text" class="form-input" value="Horta Fresca do Zé">
+                    </div>
+                        <div class="form-group">
+                            <label class="form-label">Endereço</label>
+                            <input type="text" class="form-input" value="Rua das Flores, 123, Bairro Verde">
+                        </div>
+                </div>
+                    <div class="form-group">
+                        <label class="form-label">Descrição</label>
+                        <textarea class="form-textarea" rows="4">A Horta Fresca do Zé cultiva produtos orgânicos de alta qualidade, colhidos diariamente para garantir o máximo frescor e sabor. Nossa missão é trazer a natureza para sua mesa, com muito carinho e respeito ao meio ambiente.</textarea>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Horários de Visitação</label>
+                            <input type="text" class="form-input" value="Sábados, 09:00-13:00">
+                        </div>
+                    <div class="form-group">
+                        <label class="form-label">Email de Contato</label>
+                        <input type="email" class="form-input" value="contato@hortafrescadoze.com">
+                    </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Fotos da Horta/Fazenda</label>
+                        <p class="form-hint">Máximo de 5 fotos.</p>
+
+                        <button type="button" class="btn-outline" id="upload-area">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                                Adicionar Fotos
+                        </button>
+                        <input type="file" id="file-input" accept="image/*" multiple style="display:none;">
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn-primary">Salvar Alterações</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Painel</a>
+                    <a href="#" class="footer-link">Minha Horta</a>
+                    <a href="#" class="footer-link">Ajuda</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="fornecedor.js"></script>
+</body>
+</html>

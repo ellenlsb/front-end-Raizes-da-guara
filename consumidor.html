@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="icon" type="logo-icon" href="img/Logo Raízes d´guará.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="consumidor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="navbar">
+        <div class="navbar-container">      
+<!-- Logo -->
+<a href="index.html">
+  <img class="logo-icon" src="img/logo.png"  alt="Logo Raízes d' Guará" ">
+</a>
+<!-- Menu -->
+<nav class="nav-menu">
+  <a href="consumidor.html" class="nav-link">Produtos</a>
+  <a href="produtores.html" class="nav-link">Nossos produtores</a>
+   <a href="#" class="nav-link">Cesta inteligente</a>
+</nav>
+<!-- Search Bar -->
+            <div class="search-container">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" class="search-input" placeholder="Buscar">
+            </div>
+<!-- Carrinho -->
+<a href="carrinho.html" class="action-btn cart-btn">
+  <i class="bi bi-cart"></i>
+  <span id="cart-count" class="cart-count">0</span>
+</a>
+<!-- Perfil -->
+<button class="action-btn">
+  <i class="bi bi-person"></i>
+</button>
+<!-- Sair -->
+<button class="action-btn">
+  <i class="bi bi-box-arrow-right"></i>
+</button>
+            </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container hero-content">
+        <h1 class="hero-title">Explore a Colheita Local!</h1>
+        <p class="hero-text">
+            Conecte-se com produtores locais e descubra produtos frescos, orgânicos e cheios de sabor. 
+            Apoie a agricultura familiar da sua região!
+        </p>
+    </div>
+</section>
+
+<!-- Map -->
+<section class="map-section">
+    <div class="container">
+        <h2 class="section-title">Hortas próxima a você</h2>
+        
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29218.403177848966!2d-46.75698857477828!3d-23.736664935468145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4e88255338a1%3A0x9f6492a1071719de!2sRepresa%20Guarapiranga!5e0!3m2!1spt-BR!2sbr!4v1761357033456!5m2!1spt-BR!2sbr" 
+        width="1150" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>rpolicy="no-referrer-when-downgrade">
+            
+<div class="map-filters">
+    <button class="map-btn map-btn-orange">
+        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+        </svg>
+            Produtores
+    </button>
+</div>
+            
+</div>
+    </div>
+</section>
+
+<!-- Produtos -->
+<section class="products-section">
+    <div class="container">
+        <div class="products-layout">
+<!-- filtros Sidebar -->
+<aside class="filters-sidebar">
+    <div class="filters-card">
+        <h3 class="filters-title">Filtros</h3>
+            <div class="filter-group">
+                <h4 class="filter-heading">
+                    Categorias
+                        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                </h4>
+<div class="filter-options">
+    <label class="checkbox-label">
+        <input type="checkbox" checked>
+        <span>Frutas</span>
+    </label>
+<label class="checkbox-label">
+    <input type="checkbox" checked>
+    <span>Legumes</span>
+</label>
+<label class="checkbox-label">
+    <input type="checkbox" checked>
+   <span>Verduras</span>
+</label>
+<label class="checkbox-label">
+    <input type="checkbox">
+    <span>Outros</span>
+</label>
+</div>
+</div>
+
+<div class="filter-group">
+    <h4 class="filter-heading">
+        Distância
+        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"/>
+        </svg>
+    </h4>
+<div class="filter-options">
+    <input type="range" min="0" max="20" value="10" class="slider">
+        <div class="slider-labels">
+            <span>0 km</span>
+            <span>20 km</span>
+        </div>
+</div>
+</div>
+
+<div class="filter-group">
+    <h4 class="filter-heading">
+        Tipo de Alimento
+    <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"/>
+    </svg>
+    </h4>
+<div class="filter-options">
+    <label class="radio-label">
+        <input type="radio" name="tipo" checked>
+        <span>Orgânico</span>
+    </label>
+
+<label>
+    <input type="radio" name="tipo" checked>
+    <span>Outro</span>
+</label>
+
+</div>
+</div>
+
+<div class="filter-group">
+    <h4 class="filter-heading">
+            Disponibilidade
+        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"/>
+        </svg>
+    </h4>
+<div class="filter-options">
+    <label class="radio-label">
+        <input type="radio" name="disponibilidade" checked>
+        <span>Disponível</span>
+    </label>
+    <label class="radio-label">
+        <input type="radio" name="disponibilidade">
+        <span>Esgotado</span>
+    </label>
+</div>
+</div>
+
+<div class="filter-group">
+    <h4 class="filter-heading">
+        Preço (R$)
+        <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"/>
+        </svg>
+    </h4>
+<div class="filter-options">
+    <input type="range" min="1" max="500" value="250" class="slider">
+        <div class="slider-labels">
+            <span>R$ 1</span>
+            <span>R$ 500</span>
+        </div>
+</div>
+</div>
+
+<div class="cart-actions">
+    <button class="btn-cart">
+        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="8" cy="21" r="1"/>
+            <circle cx="19" cy="21" r="1"/>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+        </svg>
+    R$ 0,00
+</div>
+</aside>
+
+<!-- Products Grid -->
+<div class="products-content">
+    <h2 class="products-title">Nossos Produtos Frescos</h2>
+
+<!-- Hortaliças -->
+<div class="category-section">
+    <h3 class="category-title">
+        <svg class="icon-category" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+        </svg>
+            Hortaliças
+    </h3>
+<div class="products-grid">
+<div class="product-card">
+    <div class="product-image">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-green-lettuce-vWBrMr9HNoerIkBcdnNyNrTR6mA57A.png" alt="Alface Crespa Orgânica">
+        <span class="badge badge-organic">Orgânico</span>
+    </div>
+<div class="product-info">
+    <h4 class="product-name">Alface Crespa Orgânica</h4>
+        <p class="product-producer">Orgânico</p>
+        <p class="product-price">R$ 5,00/un</p>
+<button
+  class="btn-add-cart"
+  data-id="1"
+  data-name="Alface Crespa Orgânica"
+  data-price="5.00">
+  <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="8" cy="21" r="1"/>
+      <circle cx="19" cy="21" r="1"/>
+      <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+  </svg>
+  Adicionar ao Carrinho
+</button>
+</div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-arugula-leaves-SCTnikwIOq8qxBTUttHjnEjeRvpTI6.jpg" alt="Brócolis Ninja Orgânico">
+        <span class="badge badge-organic">Orgânico</span>
+    </div>
+    <div class="product-info">
+        <h4 class="product-name">Brócolis Ninja Orgânico</h4>
+            <p class="product-producer">Orgânico</p>
+            <p class="product-price">R$ 8,00/un</p>
+    <button 
+    class="btn-add-cart"
+    data-id="2"
+    data-name="Brócolis Ninja Orgânico"
+    data-price="8.00">
+    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="8" cy="21" r="1"/>
+        <circle cx="19" cy="21" r="1"/>
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+    </svg>
+        Adicionar ao Carrinho
+    </button>
+    </div>
+</div>
+
+<div class="product-card">
+ <div class="product-image">
+     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-arugula-leaves-SCTnikwIOq8qxBTUttHjnEjeRvpTI6.jpg" alt="Brócolis Ninja Orgânico">
+        <span class="badge badge-organic">Orgânico</span>
+</div>
+<div class="product-info">
+    <h4 class="product-name">Rúcula Selvagem</h4>
+        <p class="product-price">R$ 4,50/maço</p>
+        <button 
+        class="btn-add-cart"
+        data-id="3"
+        data-name="Rúcula Selvagem"
+        data-price="10.00">
+            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="8" cy="21" r="1"/>
+                <circle cx="19" cy="21" r="1"/>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+                Adicionar ao Carrinho
+        </button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Frutas -->
+<div class="category-section">
+    <h3 class="category-title">
+        <span class="emoji">🍓</span>
+            Frutas
+    </h3>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-cherry-tomatoes-WVaAoyd0qXtVko9SeXZlEwyv82dEeL.jpg" alt="Tomate Cereja Orgânico">
+            <span class="badge badge-organic">Orgânico</span>
+        </div>
+            <div class="product-info">
+    <h4 class="product-name">Tomate Cereja Orgânico</h4>
+        <p class="product-producer">Orgânico</p>
+        <p class="product-price">R$ 12,00/kg</p>
+<button 
+class="btn-add-cart"
+data-id="4"
+data-name="Tomate Cereja Orgânico"
+data-price="12.00">
+    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="8" cy="21" r="1"/>
+        <circle cx="19" cy="21" r="1"/>
+        <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+    </svg>
+        Adicionar ao Carrinho
+</button>
+        </div>
+    </div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-strawberries-basket-RLgwvYb4RW0QJr88U77fcVTbZ6rLoi.jpg" alt="Morango Orgânico">
+        <span class="badge badge-organic">Orgânico</span>
+    </div>
+    <div class="product-info">
+        <h4 class="product-name">Morango Orgânico</h4>
+            <p class="product-producer">Orgânico</p>
+            <p class="product-price">R$ 15,00/bandeja</p>
+            <button class="btn-add-cart"
+                    data-id="5"
+                    data-name="Morango Orgânico"
+                    data-price="15.00">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"/>
+                    <circle cx="19" cy="21" r="1"/>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                </svg>
+                Adicionar ao Carrinho
+            </button>
+    </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-green-grapes-YBJRlUaMzIGHO5YBYlidQRJpWFglak.jpg" alt="Uva Niágara Orgânica">
+        <span class="badge badge-organic">Orgânico</span>
+    </div>
+        <div class="product-info">
+            <h4 class="product-name">Uva Niágara</h4>
+            <p class="product-producer">Orgânico</p>
+            <p class="product-price">R$ 18,00/kg</p>
+                <button class="btn-add-cart"
+                    data-id="6"
+                    data-name="Uva Niágara"
+                    data-price="18.00">
+        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="8" cy="21" r="1"/>
+            <circle cx="19" cy="21" r="1"/>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+        </svg>
+                    Adicionar ao Carrinho
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Legumes -->
+<div class="category-section">
+    <h3 class="category-title">
+        <span class="emoji">🥕</span>
+            Legumes
+    </h3>
+<div class="products-grid">
+    <div class="product-card">
+        <div class="product-image">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/fresh-carrots-IJitiwfFduNDy2uXMzlzj037A7aauD.png" alt="Cenoura Fresca">
+        </div>
+<div class="product-info">
+    <h4 class="product-name">Cenoura Fresca</h4>
+        <p class="product-price">R$ 7,50/kg</p>
+            <button class="btn-add-cart">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"/>
+                    <circle cx="19" cy="21" r="1"/>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                </svg>
+                    Adicionar ao Carrinho
+            </button>
+</div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/attachments/gen-images/public/purple-sweet-potatoes-0MPq9zJS9olueDxeLVOQJPvTUmZFea.jpg" alt="Batata Doce Roxa">
+    </div>
+        <div class="product-info">
+            <h4 class="product-name">Batata Doce Roxa</h4>
+            <p class="product-price">R$ 6,00/kg</p>
+        <button class="btn-add-cart">
+            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="8" cy="21" r="1"/>
+                <circle cx="19" cy="21" r="1"/>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+            </svg>
+                Adicionar ao Carrinho
+        </button>
+        </div>
+</div>
+
+<div class="product-card">
+    <div class="product-image">
+                                    <img src="https://blob.v0.app/Zy8Wd.jpg" alt="Abobrinha Italiana">
+
+    </div>
+<div class="product-info">
+    <h4 class="product-name">Abobrinha Italiana</h4>
+        <p class="product-price">R$ 6,50/kg</p>
+            <button class="btn-add-cart">
+                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"/>
+                    <circle cx="19" cy="21" r="1"/>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+                </svg>
+                    Adicionar ao Carrinho
+           </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="consumidor.js"></script>
+</body>
+</html>
